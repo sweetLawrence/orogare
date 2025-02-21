@@ -5,24 +5,23 @@ import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
 const Navbar = () => {
-
-  const [showLogo, setShowLogo] = useState(false);
+  const [showLogo, setShowLogo] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 60) {
-        setShowLogo(true);  // Show when scrolling up
+        setShowLogo(true) // Show when scrolling up
       } else {
-        setShowLogo(false); // Hide initially
+        setShowLogo(false) // Hide initially
       }
-    };
+    }
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
-    <div className='z-100 bg-white w-full sticky top-[-10%] shadow-md'>
+    <div className='z-100 bg-white w-full sticky top-[-10%] shadow-md overflow-hidden'>
       <div className='upper bg-white px-[4%] h-[60px] pt-1.5 flex border-b-3 border-[#f6f7f9]'>
         <div className='w-14 h-14 mr-5'>
           <Image src={Logo} />
@@ -38,7 +37,6 @@ const Navbar = () => {
       </div>
 
       <div className='lower bg-white px-[4%] h-[70px] flex items-center justify-between py-2 sticky top-0 z-50 w-full'>
-
         <div
           className={`w-14 h-14 pt-1.5 mr-5 transition-transform duration-300 ${
             showLogo ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
