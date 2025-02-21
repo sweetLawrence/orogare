@@ -1,7 +1,6 @@
 import './App.css'
 
 import { createTheme, MantineProvider } from '@mantine/core'
-import { BrowserRouter as Router } from 'react-router-dom';
 
 // import React, { useEffect } from 'react'
 import { RouterProvider } from 'react-router-dom'

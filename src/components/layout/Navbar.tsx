@@ -22,7 +22,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className='z-100 bg-white w-full sticky sticky top-[-10%] shadow-md'>
+    <div className='z-100 bg-white w-full sticky top-[-10%] shadow-md'>
       <div className='upper bg-white px-[4%] h-[60px] pt-1.5 flex border-b-3 border-[#f6f7f9]'>
         <div className='w-14 h-14 mr-5'>
           <Image src={Logo} />
