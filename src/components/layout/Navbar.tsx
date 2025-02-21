@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div className=''>
-      <div className='upper px-[4%] h-[60px] pt-1.5 flex border-b-3 border-[#f6f7f9]'>
+    <div className='z-100 bg-white w-full sticky sticky top-[-10%] shadow-md'>
+      <div className='upper bg-white px-[4%] h-[60px] pt-1.5 flex border-b-3 border-[#f6f7f9]'>
         <div className='w-14 h-14 mr-5'>
           <Image src={Logo} />
         </div>
@@ -20,12 +20,12 @@ const Navbar = () => {
         </Text>
       </div>
 
-      <div className='lower px-[4%] h-[50px] flex items-center justify-between py-2'>
+      <div className='lower bg-white px-[4%] h-[50px] flex items-center justify-between py-2 sticky top-0 z-50 w-full'>
         <div className='nav w-[80%]'>
           {navdata.map((item, i) => (
             <Link
               key={i}
-              to={`/${item.path}`}
+              to={`${item.path}`}
               className='nav-path text-text-500 mr-4 p-2 cursor-pointer active:text-secondary-500 active:font-bold text-[1.1em]'
             >
               {item.name}

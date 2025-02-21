@@ -1,7 +1,9 @@
+import LandingPage from "../components/sections/LandingPage"
+
 const Home = () => {
   return (
-    <div>
-      
+    <div className="relative">
+      <LandingPage />
     </div>
   )
 }
