@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
-    <div className='px-[4%] w-[100%] h-[75vh]'>
+    <div className='px-[4%] w-[100%] h-[100vh] md:h-[75vh] mb-30 md:mb-0'>
       <Title className='text-secondary-500 mb-10'>About Orogare TVC</Title>
 
-      <div className='flex w-[100%] h-[100%] justify-between b-accent-400'>
-        <div className='left w-[40%] h-[100%] b-accent-300'>
+      <div className='flex flex-col md:flex-row w-[100%] h-[100%] justify-between b-accent-400'>
+        <div className='left w-full md:w-[40%] h-[100%] b-accent-300'>
           <div className='img relative flex flex-col items-center justify-center'>
             <Card className='absolute bg-secondary-100 top-0 left-4 py-15 px-10'></Card>
             <Image src={Gate} className='w-[80%] z-10 top-10 m-10' />
@@ -16,7 +16,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className='right w-[55%]'>
+        <div className='right w-full md:w-[55%]'>
           <Text className='mb-5 text-text-500'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
             vitae sint modi reprehenderit voluptate, placeat deserunt hic odit
@@ -37,7 +37,7 @@ const About = () => {
           <Link to='/about'>
             <Button
               variant='outline'
-              className='border-3 border-secondary-500 w-[20%] h-[3.2em] text-primary-500'
+              className='border-3 border-secondary-500 md:w-[20%] h-[3.2em] text-primary-500'
             >
               Read More
             </Button>

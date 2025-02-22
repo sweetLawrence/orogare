@@ -91,9 +91,9 @@
     overflow-x: hidden;
   }
 
-  .nav-path {}
+  .nav-x {}
 
-  .nav-path:hover {
-    /* background: red; */
+  .nav-x:hover {
+    color: var(--color-accent-500);
   }
 }

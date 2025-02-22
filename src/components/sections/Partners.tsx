@@ -10,9 +10,9 @@ const Partners = () => {
   return (
     <div className='px-[4%] mt-10 h-[40vh]'>
      <Title className='text-secondary-500'>Partners</Title>
-      <div className='flex items-center justify-between'>
+      <div className='flex flex-wrap items-center justify-between'>
         {logos.map((logo, i) => (
-          <Image key={i} src={logo} className='w-[13%]' />
+          <Image key={i} src={logo} className='w-[25%] mx-2  md:w-[13%]' />
         ))}
       </div>
     </div>

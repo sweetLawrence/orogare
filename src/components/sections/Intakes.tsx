@@ -19,7 +19,7 @@ const Intakes = () => {
     }
   ]
   return (
-    <div className='px-[4%] w-screen h-[74vh]'>
+    <div className='px-[4%] w-screen md:h-[74vh]'>
       <Title className='text-secondary-500'>Intakes</Title>
       {/* <Text className='text-text-500'>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sunt
@@ -35,11 +35,11 @@ const Intakes = () => {
         can begin your academic journey at a convenient time.
       </Text>
 
-      <div className='sect flex justify-between mt-5'>
+      <div className='flex flex-col md:flex-row justify-between mt-5'>
         {opening.map((item, i) => (
           <Card
             key={i}
-            className='flex flex-row bg-gradient-to-b from-secondary-400 to-primary-500 w-[32%] h-[300px] relative rounded-lg'
+            className='flex flex-row bg-gradient-to-b from-secondary-400 to-primary-500 md:w-[32%] mb-5 md:mb-0 h-[300px] relative rounded-lg'
           >
             <Card.Section className='bg-white absolute right-0 !h-[100%] w-[93%] px-3 py-7'>
               <Title className='text-[1.5em] text-primary-700'>

@@ -8,6 +8,7 @@ import {
   FaEnvelope,
   FaFacebook
 } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   const current_date = new Date().getFullYear()
@@ -20,28 +21,40 @@ const Footer = () => {
     { icon: <FaFacebook />, text: '@Orogare_TVC' } // Facebook
   ]
   return (
-    <div className='flex justify-between items-start py-10 pt-20 px-[4%] bg-primary-900 text-white'>
-      <div className='w-[25%]'>
+    <div className='flex flex-col md:flex-row justify-between items-start py-10 pt-20 px-[4%] bg-primary-900 text-white'>
+      <div className='md:w-[25%]'>
         <Title className='text-2xl mb-2'>
           Orogare Technical & Vocational College
         </Title>
         <Text className='italic text-[1.1em] font-bold'>Ufundi ni maisha</Text>
-        <Card className='w-[45%] my-3.5 mb-20 rounded-lg'>
-          <Image src={Logo} alt='orogare logo' />
-        </Card>
+        <Link to={'/'}>
+          <Card className='w-[45%] my-3.5 mb-20 rounded-lg'>
+            <Image src={Logo} alt='orogare logo' />
+          </Card>
+        </Link>
         <div className='flex justify-between w-38 text-2xl'>
           <Text>@Orogare TVC</Text>
           <Text>{current_date}</Text>
         </div>
       </div>
-      <div className='w-[33%]'>
+      <div className='md:w-[33%] mt-9 md:mt-0'>
         <Title className='text-2xl mb-2 '>Site Map</Title>
 
         <div className='flex flex-wrap justify-between mb-10'>
           {navdata.map((item, i) => (
-            <div key={i} className='mr-3 text-[1.1em]'>
+            <Link
+              to={
+                item.name.toLowerCase() === 'home'
+                  ? '/'
+                  : item.name.toLowerCase() === 'news & announcements'
+                  ? '/news-announcements'
+                  : `/${item.name.toLowerCase().replace(/\s+/g, '-')}`
+              }
+              key={i}
+              className='nav-x mr-3 text-[1.1em]'
+            >
               {item.name}
-            </div>
+            </Link>
           ))}
         </div>
 
@@ -56,23 +69,20 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='w-[28%]'>
+      <div className='w-[100%] md:w-[28%] mt-9 md:mt-0'>
         <Title className='text-2xl mb-5 '>Location</Title>
 
-       
-
-
-<Card className="h-[30vh] p-0">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.4141561209526!2d34.75182790000001!3d-0.8155369999999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182b45003758d9c7%3A0x48160e780cf111b0!2sOrogare%20Technical%20Vocational%20College!5e0!3m2!1sen!2ske!4v1740258472565!5m2!1sen!2ske"
-        width="100%"
-        height="100%"
-        style={{ border: "0" }}
-        allowFullScreen
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </Card>
+        <Card className='h-[30vh] p-0 '>
+          <iframe
+            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.4141561209526!2d34.75182790000001!3d-0.8155369999999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182b45003758d9c7%3A0x48160e780cf111b0!2sOrogare%20Technical%20Vocational%20College!5e0!3m2!1sen!2ske!4v1740258472565!5m2!1sen!2ske'
+            width='100%'
+            height='100%'
+            style={{ border: '0' }}
+            allowFullScreen
+            loading='lazy'
+            referrerPolicy='no-referrer-when-downgrade'
+          ></iframe>
+        </Card>
       </div>
     </div>
   )

@@ -28,8 +28,8 @@ const Sport = () => {
     }
   ]
   return (
-    <div className='w-screen h-[120vh] relative'>
-      <Image src={team} />
+    <div className='w-screen h-[130vh] md:h-[120vh] relative '>
+      <Image src={team} className='object-cover' />
       <div className='sect text-white absolute top-[52%] z-22 px-[4%] w-[80%]'>
         <Title className='text-[3em] mb-2'>More Than Just Education</Title>
         {/* <Text className=''>
@@ -48,11 +48,11 @@ const Sport = () => {
         </Text>
       </div>
 
-      <div className='sp-card px-[4%] flex justify-between absolute w-full bottom-15'>
+      <div className='sp-card px-[4%] flex flex-col md:flex-row justify-between absolute w-full bottom-15'>
         {sports.map((sport, i) => (
           <Card
             key={i}
-            className='z-22 py-6 px-6 rounded-lg bg-white w-[19.5%] flex flex-row items-center  text-secondary-400 '
+            className='z-22 py-6 px-6 rounded-lg bg-white md:w-[19.4%] mb-4 flex flex-row items-center  text-secondary-400 '
           >
             <div className='text-[4em] mr-2 self-start'>{sport.icon}</div>
             <div className='text-text-500 font-bold text-[1.4em]'>
