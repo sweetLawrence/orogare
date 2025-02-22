@@ -20,7 +20,7 @@ const Belief = () => {
     }
   ]
   return (
-    <div className='px-[4%] w-[100%] h-[70vh] bg-back-500'>
+    <div className='px-[4%] w-[100%] h-[40vh] bg-back-500'>
       <Title className='text-secondary-500 mb-6'>Our belief system</Title>
       <div className='cs flex justify-between'>
 

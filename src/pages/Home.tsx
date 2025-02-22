@@ -1,5 +1,6 @@
 import About from '../components/sections/About'
 import Belief from '../components/sections/Belief'
+import HandsOn from '../components/sections/HandsOn'
 import LandingPage from '../components/sections/LandingPage'
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
       <LandingPage />
       <About />
       <Belief />
+      <HandsOn />
     </div>
   )
 }
