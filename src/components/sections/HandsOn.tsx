@@ -3,10 +3,10 @@ import Handson from '../../assets/handson.png'
 
 const HandsOn = () => {
   return (
-    <div className='w-screen h-screen relative'>
+    <div className='w-screen h-[92vh] relative'>
       <Image src={Handson} className='w-[100%] object-cover' />
 
-      <div className=' w-[75%] absolute bottom-[35%] left-[4%]'>
+      <div className=' w-[75%] absolute bottom-[20%] left-[4%]'>
         <Title className='text-white text-[3em]'>
           Hands-on practice ready for the real world
         </Title>
