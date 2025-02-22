@@ -1,4 +1,4 @@
-import { Card, Image } from '@mantine/core'
+import { Image } from '@mantine/core'
 import School from '../../assets/school-lp.png'
 
 const LandingPage = () => {
