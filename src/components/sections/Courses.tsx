@@ -27,7 +27,7 @@ const Courses = () => {
     }
   ]
   return (
-    <div className='px-[4%] h-[75vh]'>
+    <div className='px-[4%] h-[100vh] flex flex-col'>
       <Title className='text-secondary-500'>Courses & programs</Title>
       <Text className='text-text-500'>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sunt
@@ -36,15 +36,8 @@ const Courses = () => {
         dolore enim doloribus?
       </Text>
 
-      <div className='section flex flex-row justify-between mt-20'>
+      <div className='section flex flex-row justify-between mt-20 mb-5'>
         {levels.map((level, i) => (
-          //   <Card
-          //     key={i}
-          //     className='z-9 w-[24%] flex flex-col items-center justify-center'
-          //   >
-          //     <div className='-mt-[10%]'>
-          //       <Image src={level.img} className='z-10' />
-          //     </div>
 
           <div
             key={i}
@@ -60,6 +53,8 @@ const Courses = () => {
           </div>
         ))}
       </div>
+
+      <Button variant="outline" className=' self-center w-[15%] h-11 border-3 border-primary-700 text-primary-700 rounded-lg'>See All Courses</Button>
     </div>
   )
 }
