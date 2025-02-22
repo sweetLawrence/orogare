@@ -57,12 +57,20 @@ const LandingPage = () => {
       <div className='absolute top-0 left-0 w-full h-full bg-[linear-gradient(to_right,#002C35_20%,#002C35_30%,#002C35bf_50%,#002C3500_100%)]'></div>
 
       <div className='text-card absolute left-0 bottom-55 w-[50%] h-[260px] mx-[4%]'>
-        <Title className='text-white text-[4em] mb-1 font-sans'>DISCOVER, LEARN, INNOVATE</Title>
+        <Title className='text-white text-[4em] mb-1 font-sans'>
+          DISCOVER, LEARN, INNOVATE
+        </Title>
 
-        <Text className='text-white mb-3'>
+        {/* <Text className='text-white mb-3'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
           sunt obcaecati optio veniam corrupti dolores non dolore laborum eum
           quos?
+        </Text> */}
+
+        <Text className='text-white mb-3'>
+          Join a vibrant learning community that fosters innovation, academic
+          excellence, and holistic growth. Explore endless opportunities to
+          excel and shape your future with us.
         </Text>
 
         <Button className='bg-gradient-to-r from-secondary-400 to-primary-500 mr-6 w-[23%] h-11'>
