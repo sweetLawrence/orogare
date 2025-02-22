@@ -1,4 +1,4 @@
-import { Card, Group, Text, Title } from '@mantine/core'
+import { Card, Text, Title } from '@mantine/core'
 import { FaBinoculars, FaBullseye, FaHandHoldingHeart } from 'react-icons/fa'
 
 const Belief = () => {
