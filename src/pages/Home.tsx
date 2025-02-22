@@ -1,9 +1,11 @@
-import LandingPage from "../components/sections/LandingPage"
+import About from '../components/sections/About'
+import LandingPage from '../components/sections/LandingPage'
 
 const Home = () => {
   return (
-    <div className="relative">
+    <div className='relative'>
       <LandingPage />
+      <About />
     </div>
   )
 }

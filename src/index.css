@@ -1,5 +1,5 @@
 /* @import "tailwindcss"; */
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -85,10 +85,13 @@
 }
 
 @layer components {
-  .nav-path{
-
+  body {
+    background: #f5f5fd;
   }
-  .nav-path:hover{
+
+  .nav-path {}
+
+  .nav-path:hover {
     /* background: red; */
   }
 }

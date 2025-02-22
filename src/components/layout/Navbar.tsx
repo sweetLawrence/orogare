@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 
 const Navbar = () => {
   const [showLogo, setShowLogo] = useState(false)
+  const [selectedPath, setSelectedPath] = useState(location.pathname)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,11 +21,17 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    setSelectedPath(location.pathname) // Update on route change
+  }, [location.pathname])
+
   return (
     <div className='z-100 bg-white w-full sticky top-[-10%] shadow-md overflow-hidden'>
       <div className='upper bg-white px-[4%] h-[60px] pt-1.5 flex border-b-3 border-[#f6f7f9]'>
         <div className='w-14 h-14 mr-5'>
-          <Image src={Logo} />
+          <Link to='/'>
+            <Image src={Logo} />
+          </Link>
         </div>
 
         <Text className='text-secondary-500 font-bold text-[1.3em] pt-[.3em]'>
@@ -42,7 +49,9 @@ const Navbar = () => {
             showLogo ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
           }`}
         >
-          <Image src={Logo} />
+          <Link to='/'>
+            <Image src={Logo} />
+          </Link>
         </div>
         {/* <div className='nav w-[80%]'> */}
         <div
@@ -54,9 +63,25 @@ const Navbar = () => {
             <Link
               key={i}
               to={`${item.path}`}
-              className='nav-path text-text-500 mr-4 p-2 cursor-pointer active:text-secondary-500 active:font-bold text-[1.1em]'
+              onClick={() => setSelectedPath(item.path)}
+              className={`relative nav-path text-text-500 mr-4 pb-3.5 p-2 cursor-pointer text-[1.1em] 
+                ${
+                  selectedPath === item.path
+                    ? 'boder-b-4 borer-secondary-500 !text-secondary-500 font-bold'
+                    : ''
+                }`}
+              // className='nav-path text-text-500 mr-4 p-2 cursor-pointer active:text-secondary-500 active:font-bold text-[1.1em]'
             >
               {item.name}
+
+              <span
+                className={`absolute left-0 bottom-0 h-[5px] bg-secondary-500 transition-all duration-300 ease-in-out 
+                ${
+                  selectedPath === item.path
+                    ? 'w-full scale-x-100'
+                    : 'w-0 scale-x-0'
+                }`}
+              ></span>
             </Link>
           ))}
         </div>
