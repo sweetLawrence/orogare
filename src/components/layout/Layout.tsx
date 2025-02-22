@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Layout = () => {
   const { pathname } = useLocation();
@@ -16,6 +17,7 @@ const Layout = () => {
       <main>
         <Outlet />
       </main>
+      <Footer />
 
       {/* <Footer /> */}
       {/* <FindUs /> */}
