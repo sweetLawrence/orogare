@@ -87,6 +87,7 @@
 @layer components {
   body {
     background: #f5f5fd!important;
+    overflow-x: hidden;
   }
 
   .nav-path {}

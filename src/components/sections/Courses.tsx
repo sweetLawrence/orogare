@@ -27,7 +27,7 @@ const Courses = () => {
     }
   ]
   return (
-    <div className='px-[4%] h-[100vh] flex flex-col'>
+    <div className='px-[4%] w-screen h-[88vh] flex flex-col overflow-hidden'>
       <Title className='text-secondary-500'>Courses & programs</Title>
       <Text className='text-text-500'>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sunt

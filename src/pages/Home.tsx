@@ -2,7 +2,9 @@ import About from '../components/sections/About'
 import Belief from '../components/sections/Belief'
 import Courses from '../components/sections/Courses'
 import HandsOn from '../components/sections/HandsOn'
+import Intakes from '../components/sections/Intakes'
 import LandingPage from '../components/sections/LandingPage'
+import Sport from '../components/sections/Sport'
 
 const Home = () => {
   return (
@@ -12,6 +14,8 @@ const Home = () => {
       <Belief />
       <HandsOn />
       <Courses />
+      <Intakes />
+      <Sport />
     </div>
   )
 }
