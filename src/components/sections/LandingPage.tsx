@@ -17,7 +17,7 @@ const LandingPage = () => {
       {/* <div className="overlay absolute top-0 left-0 w-[100%] h-[100%] bg-gradient-to-r from-primary-900 to-transparent"> */}
       <div className='overlay absolute top-0 left-0 w-[70%] h-full bg-gradient-to-tr from-[#002C35] via-primary-900/60 to-transparent'></div>
 
-      <div className='text-card  '></div>
+      <div className='text-card absolute left-0 bottom-50 w-[40%] h-[260px] bg-accent-100 mx-[4%]'>Discover</div>
 
       <div className='stats absolute bottom-0 left-0 flex px-[4%]'>
         {stats.map((stat, i) => (
