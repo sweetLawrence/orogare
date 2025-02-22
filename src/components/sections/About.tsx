@@ -11,7 +11,7 @@ const About = () => {
         <div className='left w-[40%] h-[100%] b-accent-300'>
           <div className='img relative flex flex-col items-center justify-center'>
             <Card className='absolute bg-secondary-100 top-0 left-4 py-15 px-10'></Card>
-            <Image src={Gate} className='w-[80%] z-100 top-10 m-10' />
+            <Image src={Gate} className='w-[80%] z-10 top-10 m-10' />
             <Card className='absolute bg-secondary-100 bottom-0 right-4 py-15 px-10'></Card>
           </div>
         </div>

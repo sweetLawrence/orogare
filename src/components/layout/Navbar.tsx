@@ -43,7 +43,7 @@ const Navbar = () => {
         </Text>
       </div>
 
-      <div className='lower bg-white px-[4%] h-[70px] flex items-center justify-between py-2 sticky top-0 z-50 w-full'>
+      <div className='lower bg-white px-[4%] h-[70px] flex items-center justify-between py-2 sticky top-0 z-1000 w-full'>
         <div
           className={`w-14 h-14 pt-1.5 mr-5 transition-transform duration-300 ${
             showLogo ? 'scale-100 opacity-100' : 'scale-0 opacity-0'

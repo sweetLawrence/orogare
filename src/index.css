@@ -86,7 +86,7 @@
 
 @layer components {
   body {
-    background: #f5f5fd;
+    background: #f5f5fd!important;
   }
 
   .nav-path {}
