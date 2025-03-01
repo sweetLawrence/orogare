@@ -1,12 +1,9 @@
 /* @import "tailwindcss"; */
-* {
-  box-sizing: border-box;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/preflight.css" layer(base);
 @import "tailwindcss/utilities.css";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 
 
 
@@ -86,6 +83,10 @@
 }
 
 @layer components {
+  * {
+    box-sizing: border-box;
+  }
+  
   body {
     background: #f5f5fd!important;
     overflow-x: hidden;

@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
-    <div className='px-[4%] w-[100%] h-[100vh] md:h-[75vh] mb-30 md:mb-0'>
+    // <div className='px-[4%] w-[100%] h-[100vh] md:h-[75vh] mb-30 md:mb-0'>
+    <div className='px-[4%] w-[100%] h-auto mb-30 md:mb-0'>
       <Title className='text-secondary-500 mb-10'>About Orogare TVC</Title>
 
       <div className='flex flex-col md:flex-row w-[100%] h-[100%] justify-between b-accent-400'>
