@@ -1,14 +1,8 @@
-import {
-  Image,
-  List,
-  Text,
-  Title,
-  ThemeIcon
-} from '@mantine/core'
+import { Image, List, Text, Title, ThemeIcon } from '@mantine/core'
 import Admin from '../assets/adminblock.png'
 import LOGO from '../assets/logo.svg'
 import { useMediaQuery } from '@mantine/hooks'
-import { IconCircleCheck} from '@tabler/icons-react'
+import { IconCircleCheck } from '@tabler/icons-react'
 import { IconTools } from '@tabler/icons-react'
 
 const AboutPage = () => {
@@ -42,17 +36,23 @@ const AboutPage = () => {
       <div className='upper relative mt-[19%] md:-mt-[5%] '>
         <Image src={Admin} className='object-cover h-[50vh] md:h-auto' />
 
-        <div className='mcrd flex flex-col md:flex-row px-2 absolute top-4 left-0 md:top-[15%] '>
-          <div className='left w-[100px] mr-2.5'>
-            {isSmallScreen ? '' : <Image src={LOGO} className='w-full mb-3' />}
+        {isSmallScreen ? (
+          <div className='absolute top-15 left-[30%] left w-[150px] mr-2.5'>
+            <Image src={LOGO} className='w-full mb-3' />
           </div>
-          <div className='right text-white pl-3'>
-            <Title>Orogare Technical and Vocational College</Title>
-            <Title className='text-[.9em] mb-5'>Ufundi ni maisha</Title>
+        ) : (
+          <div className='mcrd flex flex-col md:flex-row px-2 absolute top-4 left-0 md:top-[15%] '>
+            <div className='left w-[100px] mr-2.5'>
+              <Image src={LOGO} className='w-full mb-3' />
+            </div>
+            <div className='right text-white pl-3'>
+              <Title>Orogare Technical and Vocational College</Title>
+              <Title className='text-[.9em] mb-5'>Ufundi ni maisha</Title>
 
-            <Text>Location:Orogare, Kisii</Text>
+              <Text>Location:Orogare, Kisii</Text>
+            </div>
           </div>
-        </div>
+        )}
 
         <div className='fcts absolute bottom-[1%] md:bottom-[10%]  md:px-2 text-white w-full'>
           <Title className='text-2xl mb-2'>Quick Facts</Title>
@@ -233,18 +233,17 @@ const AboutPage = () => {
         ></iframe>
       </div> */}
 
-<div className="relative w-full pb-[56.25%] md:pb-[43%] my-2.5 flex justify-center bg-gray-200">
-  <iframe
-    className="absolute top-0 left-0 w-full h-full"
-    src="https://www.youtube.com/embed/ZIdTELdtHHw"
-    title="OROGARE TVC Team presentation at Tabaka Kisii County During #Egesa Career Clinic"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerPolicy="strict-origin-when-cross-origin"
-    allowFullScreen
-  ></iframe>
-</div>
-
+      <div className='relative w-full pb-[56.25%] md:pb-[43%] my-2.5 flex justify-center bg-gray-200'>
+        <iframe
+          className='absolute top-0 left-0 w-full h-full'
+          src='https://www.youtube.com/embed/ZIdTELdtHHw'
+          title='OROGARE TVC Team presentation at Tabaka Kisii County During #Egesa Career Clinic'
+          frameBorder='0'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+          referrerPolicy='strict-origin-when-cross-origin'
+          allowFullScreen
+        ></iframe>
+      </div>
     </div>
   )
 }
