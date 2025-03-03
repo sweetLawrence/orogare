@@ -47,7 +47,7 @@ const LandingPage = () => {
 
   return (
     // <div className='z-10 w-[100%] h-[110vh] -mt-[110px] overflow-hidden relative mb-10'>
-    <div className='z-10 w-[100%] h-[110vh] -mt-[110px] overflow-hidden relative mb-10'>
+    <div className='z-10 w-[100%] h-[96vh] md:h-[110vh] -mt-[110px] overflow-hidden relative mb-10'>
       <div className='absolute top-0 right-0 w-[80%] h-[100%]'>
         {/* <Image
           src={School}

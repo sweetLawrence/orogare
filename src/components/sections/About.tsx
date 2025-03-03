@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const About = () => {
   return (
     // <div className='px-[4%] w-[100%] h-[100vh] md:h-[75vh] mb-30 md:mb-0'>
-    <div className='px-[4%] w-[100%] h-auto mb-30 md:mb-0'>
+    <div className='px-[4%] w-[100%] h-auto mb-10 md:mb-5'>
       <Title className='text-secondary-500 mb-10'>About Orogare TVC</Title>
 
       <div className='flex flex-col md:flex-row w-[100%] h-[100%] justify-between b-accent-400'>
@@ -18,21 +18,29 @@ const About = () => {
         </div>
 
         <div className='right w-full md:w-[55%]'>
+          <Title className='text-primary-800 mb-[.1em] text-2xl'>
+            Who We Are
+          </Title>
           <Text className='mb-5 text-text-500'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-            vitae sint modi reprehenderit voluptate, placeat deserunt hic odit
-            id culpa fuga porro veritatis libero quia, ducimus voluptatem omnis
-            molestias deleniti provident nam numquam cupiditate sed ipsam quos!
-            At obcaecati fuga voluptate magni, vitae repudiandae libero numquam
-            harum eligendi sit mollitia!
+            Orogare Technical and Vocational College (Orogare TVC) was
+            established to provide quality, accessible, and industry-driven
+            technical training in line with Kenya’s Vision 2030 and the TVET
+            Act, 2013. Located in the serene and ambient region of Bassi and
+            Masige, Kisii County, the institute offers a holistic learning
+            environment that nurtures both academic excellence and
+            extracurricular talent.
           </Text>
 
+          <Title className='text-primary-800 mb-[.1em] text-2xl'>
+            Our Journey
+          </Title>
           <Text className='mb-4 text-text-500'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-            provident nemo autem. Numquam doloremque cupiditate soluta sequi
-            fuga unde hic nihil voluptas esse modi et quos earum neque dicta,
-            autem consequuntur ut quis! Quis asperiores iure sit architecto, vel
-            aut est sequi tempore ex, enim a esse quasi maiores dolorum.
+            The idea of establishing a technical institute in this region was
+            conceived in 2018, with the goal of equipping residents with
+            practical skills, business opportunities, and sustainable
+            employment. In 2021, Orogare TVC was officially registered under
+            Section 20(1) of the TVET Act, 2013, marking the beginning of its
+            mission to produce a highly skilled workforce.
           </Text>
 
           <Link to='/about'>

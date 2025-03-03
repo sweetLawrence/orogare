@@ -6,6 +6,9 @@
 
 
 
+* {
+  box-sizing: border-box;
+}
 
 @layer theme, base, components, utilities;
 
@@ -83,16 +86,10 @@
 }
 
 @layer components {
-  * {
-    box-sizing: border-box;
-  }
-  
   body {
-    background: #f5f5fd!important;
-    overflow-x: hidden;
+    background: #f5f5fd !important;
+    overflow-x: hidden !important;
   }
-
-  .nav-x {}
 
   .nav-x:hover {
     color: var(--color-accent-500);

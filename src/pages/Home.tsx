@@ -9,6 +9,7 @@ import Partners from '../components/sections/Partners'
 import Sport from '../components/sections/Sport'
 
 const Home = () => {
+
   return (
     <div className='relative'>
       <LandingPage />

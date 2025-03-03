@@ -29,8 +29,8 @@ const Sport = () => {
   ]
   return (
     <div className='w-screen h-[130vh] md:h-[120vh] relative '>
-      <Image src={team} className='object-cover' />
-      <div className='sect text-white absolute top-[52%] z-22 px-[4%] w-[80%]'>
+      <Image src={team} className='object-cover h-[100%]' />
+      <div className='sect text-white absolute top-[52%] z-22 px-[4%] md:w-[80%]'>
         <Title className='text-[3em] mb-2'>More Than Just Education</Title>
         {/* <Text className=''>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsa,
@@ -48,7 +48,7 @@ const Sport = () => {
         </Text>
       </div>
 
-      <div className='sp-card px-[4%] flex flex-col md:flex-row justify-between absolute w-full bottom-15'>
+      <div className='sp-card px-[4%] flex flex-col md:flex-row justify-between absolute w-full bottom-5'>
         {sports.map((sport, i) => (
           <Card
             key={i}
