@@ -37,7 +37,7 @@ const AboutPage = () => {
         <Image src={Admin} className='object-cover h-[50vh] md:h-auto' />
 
         {isSmallScreen ? (
-          <div className='absolute top-15 left-[30%] left w-[150px] mr-2.5'>
+          <div className='absolute top-15 left-[37%] left w-[100px] mr-2.5'>
             <Image src={LOGO} className='w-full mb-3' />
           </div>
         ) : (
