@@ -37,10 +37,13 @@
 
 import { Button, Image, Text, Title } from '@mantine/core'
 import School from '../../assets/school-lp.png'
+import SchoolBlur from '../../assets/school-lp-min.png'
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 
 const LandingPage = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
+  const [loaded, setLoaded] = useState(false)
   const stats = [
     { num: '5+', text: 'Graduations', color: 'bg-primary-800' },
     { num: '300+', text: 'Students', color: 'bg-primary-700' },
@@ -55,10 +58,27 @@ const LandingPage = () => {
           src={School}
           className='object-contain -mt-[25%] mix-blend-multiply'
         /> */}
+
+        <Image
+          src={SchoolBlur}
+          alt='Blurred'
+          className='absolute top-0 right-0 w-[80%] h-full object-cover mix-blend-multiply scale-105 blur-md transition-opacity duration-500'
+          style={{ opacity: loaded ? 0 : 1 }}
+        />
+
         <Image
           src={School}
-          className='object-cover h-[100%] md:mt-[7%] mix-blend-multiply'
+          alt='School'
+           className='object-cover h-[100%] md:mt-[7%] mix-blend-multiply'
+          // className='absolute top-0 right-0 w-[80%] h-full object-cover mix-blend-multiply transition-opacity duration-700 ease-in-out'
+          style={{ opacity: loaded ? 1 : 0 }}
+          onLoad={() => setLoaded(true)}
         />
+
+        {/* <Image
+          src={School}
+          className='object-cover h-[100%] md:mt-[7%] mix-blend-multiply'
+        /> */}
       </div>
 
       <div className='absolute top-0 left-0 w-full h-full bg-[linear-gradient(to_right,#002C35_20%,#002C35_30%,#002C35bf_50%,#002C3500_100%)]'></div>
@@ -79,9 +99,10 @@ const LandingPage = () => {
           excel and shape your future with us.
         </Text>
 
-        <Button 
-        onClick={()=>navigate('/admissions')}
-        className='bg-gradient-to-r from-secondary-400 to-primary-500 mr-6 md:w-[23%] h-11'>
+        <Button
+          onClick={() => navigate('/admissions')}
+          className='bg-gradient-to-r from-secondary-400 to-primary-500 mr-6 md:w-[23%] h-11'
+        >
           Admission
         </Button>
       </div>
