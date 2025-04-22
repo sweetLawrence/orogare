@@ -21,7 +21,7 @@ const News = () => {
         <Card radius='md' className='bg-white md:w-[32.5%] mb-5 md:mb-0 shadow-md'>
           <Card.Section>
             <Image src={test} className='w-[100%] h-40 object-cover' />
-            <Title className='mx-3.5 text-2xl text-secondary-500'>Official opening date</Title>
+            <Title className='mx-3.5 text-2xl text-secondary-500'>Graduation Ceremony</Title>
             <Text className='mx-3.5 mb-4 my-1.5 text-text-500 font-semibold'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Accusantium odio quaerat voluptas minus dolores.
@@ -33,7 +33,7 @@ const News = () => {
         <Card radius='md' className='bg-white md:w-[32.5%] mb-5 md:mb-0 shadow-md '>
           <Card.Section>
             <Image src={test} className='w-[100%] h-40 object-cover' />
-            <Title className='mx-3.5 text-2xl text-secondary-500'>Official opening date</Title>
+            <Title className='mx-3.5 text-2xl text-secondary-500'>Official Examination date</Title>
             <Text className='mx-3.5 mb-4 my-1.5 text-text-500 font-semibold'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Accusantium odio quaerat voluptas minus dolores.

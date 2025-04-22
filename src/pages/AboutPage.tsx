@@ -2,8 +2,10 @@ import { Image, List, Text, Title, ThemeIcon } from '@mantine/core'
 import Admin from '../assets/adminblock.png'
 import LOGO from '../assets/logo.svg'
 import { useMediaQuery } from '@mantine/hooks'
-import { IconCircleCheck } from '@tabler/icons-react'
-import { IconTools } from '@tabler/icons-react'
+
+import { TbCircleCheck, TbTools } from 'react-icons/tb'
+
+import { Link } from 'react-router-dom'
 
 const AboutPage = () => {
   const isSmallScreen = useMediaQuery('(max-width: 640px)')
@@ -17,10 +19,7 @@ const AboutPage = () => {
     //   fig: '5000+',
     //   text: 'Graduands'
     // },
-    {
-      fig: '10',
-      text: 'Graduations'
-    },
+  
     {
       fig: '50',
       text: 'Programs'
@@ -38,12 +37,16 @@ const AboutPage = () => {
 
         {isSmallScreen ? (
           <div className='absolute top-15 left-[37%] left w-[100px] mr-2.5'>
-            <Image src={LOGO} className='w-full mb-3' />
+            <Link to='/'>
+              <Image src={LOGO} className='w-full mb-3' />
+            </Link>
           </div>
         ) : (
           <div className='mcrd flex flex-col md:flex-row px-2 absolute top-4 left-0 md:top-[15%] '>
             <div className='left w-[100px] mr-2.5'>
-              <Image src={LOGO} className='w-full mb-3' />
+              <Link to='/'>
+                <Image src={LOGO} className='w-full mb-3' />
+              </Link>
             </div>
             <div className='right text-white pl-3'>
               <Title>Orogare Technical and Vocational College</Title>
@@ -56,7 +59,8 @@ const AboutPage = () => {
 
         <div className='fcts absolute bottom-[1%] md:bottom-[10%]  md:px-2 text-white w-full'>
           <Title className='text-2xl mb-2'>Quick Facts</Title>
-
+          
+          {/* TODO */}
           <div className='x flex flex-row  md:w-[0%] justify-between bg-Accent-300'>
             {facts.map((fact, i) => (
               <div
@@ -73,7 +77,8 @@ const AboutPage = () => {
                 <p className='md:text-[1em]'>{fact.text}</p>
               </div>
             ))}
-          </div>
+          </div>{' '}
+          {/* TODO */}
         </div>
       </div>
 
@@ -127,7 +132,8 @@ const AboutPage = () => {
             icon={
               <ThemeIcon color='teal' size={24} radius='xl'>
                 {/* <IconCircleCheck size={16} /> */}
-                <IconTools size={16} />
+                {/* <IconTools size={16} /> */}
+                <TbTools size={16} />
               </ThemeIcon>
             }
           >
@@ -161,7 +167,8 @@ const AboutPage = () => {
             center
             icon={
               <ThemeIcon color='teal' size={24} radius='xl'>
-                <IconCircleCheck size={16} />
+                {/* <IconCircleCheck size={16} /> */}
+                <TbCircleCheck size={16}/>
               </ThemeIcon>
             }
           >

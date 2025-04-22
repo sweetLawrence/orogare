@@ -94,4 +94,31 @@
   .nav-x:hover {
     color: var(--color-accent-500);
   }
+
+
+  /* Make the table scrollable horizontally on small screens */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Ensure that the table fits within the screen on small devices */
+@media (max-width: 768px) {
+  .mantine-Table {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .mantine-Table td, .mantine-Table th {
+    padding: 8px;
+  }
+
+  .mantine-Table .mantine-TableTh, .mantine-Table .mantine-TableTd {
+    word-wrap: break-word;
+    white-space: normal;
+  }
+}
+
+
+
 }

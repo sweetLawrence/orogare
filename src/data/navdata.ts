@@ -5,7 +5,7 @@ const navdata = [
     { name: "Governance", path: "/governance" },
     { name: "Careers", path: "/careers" },
     { name: "Tenders", path: "/tenders" },
-    { name: "News & Announcements", path: "/news-announcements" }
+    { name: "Charter", path: "/news-announcements" }
   ];
   
   export default navdata;
