@@ -150,12 +150,12 @@ const Courses = () => {
         competence and career readiness.
       </Text>
 
-      <div className='section flex flex-wrap justify-center md:justify-between gap-20 md:gap-8 mt-16 mb-10'>
+      <div className='section flex flex-wrap justify-center md:justify-between gap-20 md:gap-16 lg:gap-8 mt-16 mb-10'>
         {levels.map((level, i) => (
           <div
             key={i}
             className='bg-primary-800 text-white relative z-10 
-              w-full sm:w-[48%] md:w-[32%] lg:w-[22%] 
+              w-full sm:w-[60%] md:w-[40%] lg:w-[22%] 
               flex flex-col items-center justify-between 
               px-4 pt-20 pb-6 shadow-lg rounded-xl 
               transition-all duration-300 hover:scale-105'
@@ -164,7 +164,7 @@ const Courses = () => {
               <Image src={level.img} />
             </div>
 
-            <Title order={3} className='mt-8 mb-2 text-center text-[1.3em]'>
+            <Title order={3} className='mt-22 md:mt-16 mb-2 text-center text-[1.3em]'>
               {level.title}
             </Title>
             <Text className='mb-4 text-center'>{level.sometext}</Text>
