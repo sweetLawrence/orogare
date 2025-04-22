@@ -101,7 +101,9 @@
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
-
+.font-bold{
+  font-weight: 700;
+}
 /* Ensure that the table fits within the screen on small devices */
 @media (max-width: 768px) {
   .mantine-Table {
