@@ -10,8 +10,8 @@ const Intakes = () => {
     },
     {
       title: 'May Intake',
-      from: '20th Apr 2025',
-      to: '1st June 2025',
+      from: '1st Apr 2025',
+      to: '31st May 2025',
       status:'Open'
     },
     {
