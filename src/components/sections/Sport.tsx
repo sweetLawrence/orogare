@@ -219,7 +219,7 @@ const Sport = () => {
       <div className='absolute top-0 left-0 w-full h-full bg-[linear-gradient(to_top,#002C35_20%,#002C35_30%,#002C35bf_50%,#002C3500_100%)] z-0'></div>
 
       {/* Text and Cards Wrapper */}
-      <div className='relative z-10 px-[4%] pt-[70%] md:pt-[23%] md:w-[80%] text-white'>
+      <div className='relative z-10 px-[4%] pt-[70%] md:pt-[21%] md:w-[80%] text-white'>
         <Title className='text-[2em] md:text-[3em] mb-4'>More Than Just Education</Title>
         <Text className='mb-10'>
           Education goes beyond the classroom. Our institution fosters holistic
@@ -234,7 +234,7 @@ const Sport = () => {
       <div
         className='sp-card px-[4%] pb-[5%] flex flex-wrap gap-4 justify-between
                    md:absolute md:bottom-5 md:w-full z-10 
-                   mt-1 md:mt-0 bg-rd-400'
+                   mt-1 md:mt-8 bg-rd-400'
       >
         {sports.map((sport, i) => (
           <Card
