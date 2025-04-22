@@ -24,7 +24,7 @@ const Admission = () => {
             Ongoing Intake
           </Title>
           <Text className="text-center text-gray-700">
-            <b>Starts on:</b> {intakeStart}
+            <b>Started on:</b> {intakeStart}
           </Text>
           <Text className="text-center text-gray-700">
             <b>Closes on:</b> {intakeClose}
