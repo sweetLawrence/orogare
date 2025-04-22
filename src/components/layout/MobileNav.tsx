@@ -24,8 +24,8 @@ const navData = [
   { name: 'Careers', path: '/careers', icon: <TbBriefcase size={14} /> },
   { name: 'Tenders', path: '/tenders', icon: <TbFileText size={14} /> },
   {
-    name: 'News & Announcements',
-    path: '/news-announcements',
+    name: 'Charter',
+    path: '/charter',
     icon: <TbNews size={14} />
   }
 ]
