@@ -41,7 +41,10 @@ const MobileNav = () => {
           <Image src={LOGO} alt='Orogare Logo' />
         </Link>
       </div>
-      <Menu transitionProps={{ transition: 'rotate-right', duration: 150 }} onClose={() => setIsMenuOpen(false)}>
+      <Menu
+        transitionProps={{ transition: 'rotate-right', duration: 150 }}
+        onClose={() => setIsMenuOpen(false)}
+      >
         <Menu.Target>
           <Burger
             opened={isMenuOpen}
@@ -63,9 +66,10 @@ const MobileNav = () => {
               {item.name}
             </Menu.Item>
           ))}
-          <Button 
-          onClick={()=> navigate('/admissions')}
-          className='ml-[4%] w-[90%] mb-3 bg-gradient-to-r from-secondary-400 to-primary-500'>
+          <Button
+            onClick={() => navigate('/admissions')}
+            className='ml-[4%] w-[90%] mb-3 bg-gradient-to-r from-secondary-400 to-primary-500'
+          >
             Admission
           </Button>
         </Menu.Dropdown>
@@ -75,4 +79,3 @@ const MobileNav = () => {
 }
 
 export default MobileNav
-
