@@ -37,8 +37,10 @@
 
 import { Button, Image, Text, Title } from '@mantine/core'
 import School from '../../assets/school-lp.png'
+import { useNavigate } from 'react-router-dom'
 
 const LandingPage = () => {
+  const navigate = useNavigate();
   const stats = [
     { num: '5+', text: 'Graduations', color: 'bg-primary-800' },
     { num: '300+', text: 'Students', color: 'bg-primary-700' },
@@ -77,7 +79,9 @@ const LandingPage = () => {
           excel and shape your future with us.
         </Text>
 
-        <Button className='bg-gradient-to-r from-secondary-400 to-primary-500 mr-6 md:w-[23%] h-11'>
+        <Button 
+        onClick={()=>navigate('/admissions')}
+        className='bg-gradient-to-r from-secondary-400 to-primary-500 mr-6 md:w-[23%] h-11'>
           Admission
         </Button>
       </div>

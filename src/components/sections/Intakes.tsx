@@ -1,24 +1,27 @@
 import { Button, Card, Text, Title } from '@mantine/core'
+import { useNavigate } from 'react-router-dom'
 
 const Intakes = () => {
+  const navigate = useNavigate()
+
   const opening = [
     {
       title: 'January Intake',
       from: '1st Jan 2025',
       to: '3rd Feb 2025',
-      status:'Closed'
+      status: 'Closed'
     },
     {
       title: 'May Intake',
       from: '1st Apr 2025',
       to: '31st May 2025',
-      status:'Open'
+      status: 'Open'
     },
     {
       title: 'September Intake',
       from: '1st Aug 2025',
       to: '3rd Oct 2025',
-      status:'Closed'
+      status: 'Closed'
     }
   ]
   return (
@@ -44,7 +47,11 @@ const Intakes = () => {
         {opening.map((item, i) => (
           <Card
             key={i}
-            className={`flex flex-row bg-gradient-to-b ${item.status === 'Open'?'from-secondary-400 to-primary-500':'bg-primary-950'}  md:w-[32%] mb-5 md:mb-0 h-[300px] relative rounded-lg`}
+            className={`flex flex-row bg-gradient-to-b ${
+              item.status === 'Open'
+                ? 'from-secondary-400 to-primary-500'
+                : 'bg-primary-950'
+            }  md:w-[32%] mb-5 md:mb-0 h-[300px] relative rounded-lg`}
           >
             <Card.Section className='bg-white absolute right-0 !h-[100%] w-[93%] px-3 py-7'>
               <Title className='text-[1.5em] text-primary-700'>
@@ -60,10 +67,19 @@ const Intakes = () => {
               </Text>
             </Card.Section>
             <div className='g'>
-              <Button className='absolute bg-gradient-to-r from-secondary-400 to-primary-500 bottom-[10%] left-[15%] w-[27%]'>
+              <Button
+                onClick={() => navigate('/admissions')}
+                className='absolute bg-gradient-to-r from-secondary-400 to-primary-500 bottom-[10%] left-[15%] w-[27%]'
+              >
                 Apply
               </Button>
-              <div className={`absolute bg-gradient-to-r bottom-[12%] right-[15%] w-[27%] text-[1.2em] font-bold ${item.status=='Closed'? 'text-red-500':'text-green-500'}`}>{item.status}</div>
+              <div
+                className={`absolute bg-gradient-to-r bottom-[12%] right-[15%] w-[27%] text-[1.2em] font-bold ${
+                  item.status == 'Closed' ? 'text-red-500' : 'text-green-500'
+                }`}
+              >
+                {item.status}
+              </div>
             </div>
           </Card>
         ))}
