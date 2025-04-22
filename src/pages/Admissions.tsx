@@ -4,12 +4,12 @@ import { FaCheckCircle } from 'react-icons/fa';
 const Admission = () => {
   const documents = [
     'National ID or Birth Certificate',
-    'Completed Admission Form',
+    // 'Completed Admission Form',
     'Two Passport-sized Photos',
     'Academic Certificates or Transcripts',
     'Medical Report (if required)',
     'Parent/Guardian ID (if under 18)',
-    'Payment Slip (if applicable)',
+    // 'Payment Slip (if applicable)',
   ];
 
   const intakeStart = 'Tuesday, April 1, 2025';
