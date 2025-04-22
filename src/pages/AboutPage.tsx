@@ -1,14 +1,18 @@
 import { Image, List, Text, Title, ThemeIcon } from '@mantine/core'
 import Admin from '../assets/adminblock.png'
+import AdminBlur from '../assets/adminblock-min.png'
+
 import LOGO from '../assets/logo.svg'
 import { useMediaQuery } from '@mantine/hooks'
 
 import { TbCircleCheck, TbTools } from 'react-icons/tb'
 
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 const AboutPage = () => {
   const isSmallScreen = useMediaQuery('(max-width: 640px)')
+  const [loaded, setLoaded] = useState(false)
 
   const facts = [
     {
@@ -19,7 +23,7 @@ const AboutPage = () => {
     //   fig: '5000+',
     //   text: 'Graduands'
     // },
-  
+
     {
       fig: '50',
       text: 'Programs'
@@ -33,7 +37,21 @@ const AboutPage = () => {
   return (
     <div className='min-h-[100vh]'>
       <div className='upper relative mt-[19%] md:-mt-[5%]'>
-        <Image src={Admin} className='object-cover h-[50vh] md:h-auto' />
+        <Image
+          src={AdminBlur}
+          alt='Blurred'
+          className='absolute top-0 right-0 w-[80%] h-full object-cover mix-blend-multiply scale-105 blur-md transition-opacity duration-500'
+          style={{ opacity: loaded ? 0 : 1 }}
+        />
+
+        <Image
+          src={Admin}
+          alt='Admin Block'
+          className='object-cover h-[50vh] md:h-auto'
+          style={{ opacity: loaded ? 1 : 0 }}
+          onLoad={() => setLoaded(true)}
+        />
+        {/* <Image src={Admin} className='object-cover h-[50vh] md:h-auto' /> */}
 
         {isSmallScreen ? (
           <div className='absolute top-15 left-[37%] left w-[100px] mr-2.5'>
@@ -59,7 +77,6 @@ const AboutPage = () => {
 
         <div className='fcts absolute bottom-[1%] md:bottom-[10%]  md:px-2 text-white w-full'>
           <Title className='text-3xl mb-2 pl-2 md:pl-10'>Quick Facts</Title>
-          
           {/* TODO */}
           <div className='x flex flex-row  md:w-[0%] justify-between bg-Accent-300 px-2 md:pl-10'>
             {facts.map((fact, i) => (
@@ -168,7 +185,7 @@ const AboutPage = () => {
             icon={
               <ThemeIcon color='teal' size={24} radius='xl'>
                 {/* <IconCircleCheck size={16} /> */}
-                <TbCircleCheck size={16}/>
+                <TbCircleCheck size={16} />
               </ThemeIcon>
             }
           >
