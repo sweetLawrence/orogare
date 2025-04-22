@@ -32,7 +32,7 @@ const AboutPage = () => {
   ]
   return (
     <div className='min-h-[100vh]'>
-      <div className='upper relative mt-[19%] md:-mt-[5%] '>
+      <div className='upper relative mt-[19%] md:-mt-[5%]'>
         <Image src={Admin} className='object-cover h-[50vh] md:h-auto' />
 
         {isSmallScreen ? (
@@ -42,7 +42,7 @@ const AboutPage = () => {
             </Link>
           </div>
         ) : (
-          <div className='mcrd flex flex-col md:flex-row px-2 absolute top-4 left-0 md:top-[15%] '>
+          <div className='mcrd flex flex-col md:flex-row px-2 absolute top-4 left-0 md:top-[15%] md:pl-10 '>
             <div className='left w-[100px] mr-2.5'>
               <Link to='/'>
                 <Image src={LOGO} className='w-full mb-3' />
@@ -52,16 +52,16 @@ const AboutPage = () => {
               <Title>Orogare Technical and Vocational College</Title>
               <Title className='text-[.9em] mb-5'>Ufundi ni maisha</Title>
 
-              <Text>Location:Orogare, Kisii</Text>
+              <Text>Location: Orogare, Kisii</Text>
             </div>
           </div>
         )}
 
         <div className='fcts absolute bottom-[1%] md:bottom-[10%]  md:px-2 text-white w-full'>
-          <Title className='text-2xl mb-2'>Quick Facts</Title>
+          <Title className='text-3xl mb-2 pl-2 md:pl-10'>Quick Facts</Title>
           
           {/* TODO */}
-          <div className='x flex flex-row  md:w-[0%] justify-between bg-Accent-300'>
+          <div className='x flex flex-row  md:w-[0%] justify-between bg-Accent-300 px-2 md:pl-10'>
             {facts.map((fact, i) => (
               <div
                 key={i}
@@ -82,7 +82,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <div className='lower px-2'>
+      <div className='lower px-4 md:px-14'>
         <div className='right w-full md:w-[100%]'>
           <Title className='text-primary-800 mb-[.1em] mt-3 text-2xl '>
             Who We Are
