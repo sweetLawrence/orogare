@@ -337,7 +337,7 @@
 import { Button, Image, Text } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Logo from '../../assets/logo.svg'
 import navdata from '../../data/navdata'
 
@@ -345,6 +345,8 @@ const Navbar = () => {
   const [showLogo, setShowLogo] = useState(false)
   const [selectedPath, setSelectedPath] = useState(location.pathname)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const navigate = useNavigate()
 
   // Detect small screens
   const isSmallScreen = useMediaQuery('(max-width: 640px)')
@@ -441,7 +443,9 @@ const Navbar = () => {
           ))}
         </div>
 
-        <Button className='bg-gradient-to-r from-secondary-400 to-primary-500 mr-6 w-[10%]'>
+        <Button 
+        onClick={()=> navigate('/admissions')}
+        className='bg-gradient-to-r from-secondary-400 to-primary-500 mr-6 w-[10%]'>
           Admission
         </Button>
       </div>

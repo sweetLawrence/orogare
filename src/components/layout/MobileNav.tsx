@@ -63,7 +63,9 @@ const MobileNav = () => {
               {item.name}
             </Menu.Item>
           ))}
-          <Button className='ml-[4%] w-[90%] mb-3 bg-gradient-to-r from-secondary-400 to-primary-500'>
+          <Button 
+          onClick={()=> navigate('/admissions')}
+          className='ml-[4%] w-[90%] mb-3 bg-gradient-to-r from-secondary-400 to-primary-500'>
             Admission
           </Button>
         </Menu.Dropdown>

@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
 import Courses from './pages/Courses';
 import UnderConstructionPage from './components/common/404';
+import Admission from './pages/Admissions';
 
 const router = createBrowserRouter([
   {
@@ -23,12 +24,19 @@ const router = createBrowserRouter([
         element: <Courses />, 
       },
       {
+        path: '/governance',
+        element: <UnderConstructionPage />, 
+      },{
         path: '/careers',
         element: <UnderConstructionPage />, 
       },{
-        path: '/talk-to-us',
+        path: '/tenders',
         element: <UnderConstructionPage />, 
+      },{
+        path: '/admissions',
+        element: <Admission />, 
       },
+      
       {
         path:"*",
         element: <UnderConstructionPage />, 
