@@ -34,6 +34,13 @@ const MobileNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const navigate = useNavigate()
 
+  function closeAndNavigate () {
+     setIsMenuOpen(false)
+    navigate('/admissions')
+   
+  
+  }
+
   return (
     <div className='z-100 py-2 px-[4%] fixed top-0 flex bg-white w-full justify-between'>
       <div className='logo'>
@@ -67,7 +74,7 @@ const MobileNav = () => {
             </Menu.Item>
           ))}
           <Button
-            onClick={() => navigate('/admissions')}
+            onClick={() => closeAndNavigate()}
             className='ml-[4%] w-[90%] mb-3 bg-gradient-to-r from-secondary-400 to-primary-500'
           >
             Admission

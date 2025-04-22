@@ -1,6 +1,6 @@
 // import { Card, Title, Text, Button, Group } from '@mantine/core'
 // import { FiEye, FiDownload } from 'react-icons/fi'
-// import Charter from '../docs/orogare_charter.pdf' 
+// import Charter from '../docs/orogare_charter.pdf'
 
 // const CharterPage: React.FC = () => {
 //   return (
@@ -46,13 +46,9 @@
 
 // export default CharterPage
 
-
-
-
-
 import { Card, Title, Text, Button, Group, Divider } from '@mantine/core'
 import { FiEye, FiDownload } from 'react-icons/fi'
-import Charter from '../docs/orogare_charter.pdf' 
+import Charter from '../docs/orogare_charter.pdf'
 
 const CharterPage: React.FC = () => {
   return (
@@ -64,7 +60,9 @@ const CharterPage: React.FC = () => {
 
       {/* Description Section */}
       <Text className='text-center mb-6 text-lg text-gray-600'>
-        Welcome to the official Orogare TVC Charter page. Here you can explore the foundation and principles that guide our institution. Discover our mission, vision, and the values that make us dedicated to providing quality education.
+        Welcome to the official Orogare TVC Charter page. Here, you can explore
+        the principles and values that guide our institution, along with our
+        mission and vision for delivering quality education.
       </Text>
 
       {/* Charter Information Card */}
@@ -79,16 +77,17 @@ const CharterPage: React.FC = () => {
         <Divider className='my-4' />
 
         <Text className='text-gray-600'>
-          By reading the full charter, you’ll gain insights into the organizational
-          structure and strategic goals of Orogare TVC, ensuring that all our
-          stakeholders are aligned with the institution’s long-term vision.
+          {/* By reading the full charter, you’ll gain insights into the
+          organizational structure and strategic goals of Orogare TVC, ensuring
+          that all our stakeholders are aligned with the institution’s long-term
+          vision. */}
         </Text>
 
         {/* Button Section */}
         <Group className='mt-4 flex-col sm:flex-row gap-4'>
           <Button
             component='a'
-            href={Charter}  
+            href={Charter}
             target='_blank'
             rel='noopener noreferrer'
             variant='outline'
@@ -100,7 +99,7 @@ const CharterPage: React.FC = () => {
 
           <Button
             component='a'
-            href={Charter} 
+            href={Charter}
             download
             leftSection={<FiDownload size={18} />}
             className='bg-gradient-to-r from-secondary-400 to-primary-500 text-white w-full sm:w-auto'
@@ -109,10 +108,8 @@ const CharterPage: React.FC = () => {
           </Button>
         </Group>
       </Card>
-
     </div>
   )
 }
 
 export default CharterPage
-
