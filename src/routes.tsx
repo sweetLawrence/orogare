@@ -5,6 +5,7 @@ import AboutPage from './pages/AboutPage';
 import Courses from './pages/Courses';
 import UnderConstructionPage from './components/common/404';
 import Admission from './pages/Admissions';
+import CareersPage from './pages/Careers';
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
         element: <UnderConstructionPage />, 
       },{
         path: '/careers',
-        element: <UnderConstructionPage />, 
+        element: <CareersPage />, 
       },{
         path: '/tenders',
         element: <UnderConstructionPage />, 
