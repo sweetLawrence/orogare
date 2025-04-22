@@ -68,7 +68,7 @@ const TendersPage: React.FC = () => {
 
   return (
     <div className='p-6 max-w-5xl mx-auto'>
-      <Title order={2} className='mb-6 text-center text-blue-700'>
+      <Title order={2} className='mb-6 text-center text-primary-800'>
         Tenders
       </Title>
 
