@@ -3,6 +3,7 @@ import Layout from './components/layout/Layout'
 import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
 import Courses from './pages/Courses';
+import UnderConstructionPage from './components/common/404';
 
 const router = createBrowserRouter([
   {
@@ -23,14 +24,14 @@ const router = createBrowserRouter([
       },
       {
         path: '/careers',
-        // element: <Careers />, 
+        element: <UnderConstructionPage />, 
       },{
         path: '/talk-to-us',
-        // element: <TalkToUs />, 
+        element: <UnderConstructionPage />, 
       },
       {
         path:"*",
-        // element:<Four04 />
+        element: <UnderConstructionPage />, 
       }
      
     ],
