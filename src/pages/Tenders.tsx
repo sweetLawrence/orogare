@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Card, Title, Badge, Select, Group, Text, Button } from '@mantine/core'
+import { FiDownload } from 'react-icons/fi'
 
 interface Tender {
   id: string
@@ -127,6 +128,7 @@ const TendersPage: React.FC = () => {
                 <Button
                   component='a'
                   href={tender.documentUrl}
+                  leftSection={<FiDownload size={18} />}
                   download
                   className='w-full bg-gradient-to-r from-secondary-400 to-primary-500 text-white text-sm'
                 >
