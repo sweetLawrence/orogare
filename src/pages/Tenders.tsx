@@ -7,7 +7,7 @@ interface Tender {
   year: string
   status: 'Open' | 'Closed'
   description: string
-  documentUrl: string // NEW
+  documentUrl: string 
 }
 
 const tendersData: Tender[] = [
@@ -96,38 +96,7 @@ const TendersPage: React.FC = () => {
       ) : (
         <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
           {filteredTenders.map(tender => (
-            // <Card
-            //   key={tender.id}
-            //   shadow='md'
-            //   padding='lg'
-            //   radius='md'
-            //   withBorder
-            // >
-            //   <Group className='mb-2'>
-            //     <Title order={4}>{tender.title}</Title>
-            //     <Badge
-            //       color={tender.status === 'Open' ? 'green' : 'red'}
-            //       variant='light'
-            //     >
-            //       {tender.status}
-            //     </Badge>
-            //   </Group>
-            //   <Text className='mb-2 text-sm text-gray-700'>
-            //     {tender.description}
-            //   </Text>
-            //   <Badge color='blue' variant='light'>
-            //     {tender.year}
-            //   </Badge>
-            //   <Button
-            //     component="a"
-            //     href={tender.documentUrl}
-            //     download
-            //     className='mt-4 inline-block bg-gradient-to-r from-secondary-400 to-primary-500 text-white text-sm px-4 py-2 rounded transition md:w-[40%]'
-            //   >
-            //     Download Document
-            //   </Button>
-            // </Card>
-
+         
             <Card
               key={tender.id}
               shadow='md'

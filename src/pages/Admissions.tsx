@@ -21,7 +21,7 @@ const Admission = () => {
         {/* Intake Dates */}
         <Paper shadow="xs" p="lg" radius="md" className="bg-primary-50 mb-12">
           <Title order={2} className="text-center text-primary-700 mb-2">
-            Upcoming Intake
+            Ongoing Intake
           </Title>
           <Text className="text-center text-gray-700">
             <b>Starts on:</b> {intakeStart}
