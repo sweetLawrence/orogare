@@ -2,8 +2,11 @@ import { Button, Image, Text, Title } from '@mantine/core'
 import Catapiller from '../../assets/catapiller.png'
 import Woman from '../../assets/woman.png'
 import Workshop from '../../assets/workshop.png'
+import { useNavigate } from 'react-router-dom'
 
 const Courses = () => {
+
+  const navigate = useNavigate()
   const levels = [
     {
       img: Catapiller,
@@ -63,6 +66,7 @@ const Courses = () => {
             <Button
               variant='outline'
               className='w-[50%]  h-11 border-3 border-white text-white rounded-lg'
+              onClick={() => navigate(`/courses?category=${encodeURIComponent(level.title)}`)}
             >
               See Courses
             </Button>
@@ -73,6 +77,7 @@ const Courses = () => {
       <Button
         variant='outline'
         className=' self-center md:w-[15%] h-11 border-3 border-primary-700 text-primary-700 rounded-lg'
+        onClick={() => navigate('/courses')}
       >
         See All Courses
       </Button>
