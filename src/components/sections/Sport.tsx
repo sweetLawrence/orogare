@@ -241,7 +241,7 @@ const Sport = () => {
             key={i}
             className='py-4 px-3 rounded-lg bg-white 
                        flex flex-row items-center text-secondary-400 
-                       w-[48%] md:w-[18.9%]'
+                       w-[45%] md:w-[18.9%]'
           >
             <div className='text-[2em] md:text-[4em] mr-2 self-start'>
               {sport.icon}
