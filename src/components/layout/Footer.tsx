@@ -15,7 +15,7 @@ const Footer = () => {
 
   const contacts = [
     { icon: <FaPhoneAlt />, text: '0791964600' },
-    { icon: <FaHome />, text: 'P.O BOX 356-40204, OGEMBO' },
+    { icon: <FaHome />, text: 'P.O BOX 356-40204, Ogembo' },
     { icon: <FaTwitter />, text: '@Orogare_TVC' }, // Twitter/X
     { icon: <FaEnvelope />, text: 'orogaretvc@gmail.com' },
     { icon: <FaFacebook />, text: '@Orogare_TVC' } // Facebook
