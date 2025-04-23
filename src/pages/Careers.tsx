@@ -19,23 +19,23 @@ interface Job {
 }
 
 const jobs: Job[] = [
-  //   {
-  //     title: 'Trainer in Automotive Engineering',
-  //     deadline: 'Fri 13, Sep 2024',
-  //     roles: [
-  //       'Develop and deliver comprehensive training programs in automotive technology.',
-  //       'Provide hands-on demonstrations and practical workshops for students on automotive systems and diagnostics.',
-  //       'Assess students\' progress and provide constructive feedback to enhance their learning experience.',
-  //       'Stay updated with the latest advancements in automotive technology to integrate into training sessions.',
-  //       'Collaborate with industry experts to ensure the training curriculum aligns with current automotive standards and trends.',
-  //     ],
-  //     qualifications: [
-  //       'Certification in automotive technology or relevant industry certifications.',
-  //       'Minimum 3 years of experience in the automotive industry or teaching automotive courses.',
-  //       'Strong knowledge of modern automotive systems, diagnostics, and repair techniques.',
-  //       'Excellent communication and instructional skills, with the ability to engage students in hands-on learning.',
-  //     ],
-  //   },
+    {
+      title: 'Trainer in Automotive Engineering',
+      deadline: 'Fri 13, Sep 2026',
+      roles: [
+        'Develop and deliver comprehensive training programs in automotive technology.',
+        'Provide hands-on demonstrations and practical workshops for students on automotive systems and diagnostics.',
+        'Assess students\' progress and provide constructive feedback to enhance their learning experience.',
+        'Stay updated with the latest advancements in automotive technology to integrate into training sessions.',
+        'Collaborate with industry experts to ensure the training curriculum aligns with current automotive standards and trends.',
+      ],
+      qualifications: [
+        'Certification in automotive technology or relevant industry certifications.',
+        'Minimum 3 years of experience in the automotive industry or teaching automotive courses.',
+        'Strong knowledge of modern automotive systems, diagnostics, and repair techniques.',
+        'Excellent communication and instructional skills, with the ability to engage students in hands-on learning.',
+      ],
+    },
 ]
 
 const CareersPage: React.FC = () => {
@@ -80,7 +80,7 @@ const CareersPage: React.FC = () => {
         Open Positions
       </Title>
 
-      {jobs.length === 0 ? (
+      {jobs.length !== 0 ? ( // change !== to === when necessary
         <div className='text-red-500 font-bold'>
             No open positions at the moment
         </div>

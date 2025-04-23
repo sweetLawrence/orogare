@@ -61,9 +61,9 @@
 //         {levels.map((level, i) => (
 //           <div
 //             key={i}
-//             className='bg-primary-800 text-white relative z-10 
-//                  w-full sm:w-[48%] md:w-[32%] lg:w-[20%] 
-//                  flex flex-col items-center justify-center 
+//             className='bg-primary-800 text-white relative z-10
+//                  w-full sm:w-[48%] md:w-[32%] lg:w-[20%]
+//                  flex flex-col items-center justify-center
 //                  px-3 pt-20 pb-6 shadow-lg rounded-lg'
 //           >
 //             <div className='absolute -top-10 left-1/2 transform -translate-x-1/2 w-[75%] !z-20  mb-2'>
@@ -97,10 +97,6 @@
 // }
 
 // export default Courses
-
-
-
-
 
 import { Button, Image, Text, Title } from '@mantine/core'
 import Catapiller from '../../assets/catapiller.png'
@@ -157,14 +153,17 @@ const Courses = () => {
             className='bg-primary-800 text-white relative z-10 
               w-full sm:w-[60%] md:w-[40%] lg:w-[22.9%] 
               flex flex-col items-center justify-between 
-              px-4 pt-20 pb-6 shadow-lg rounded-xl 
+              px-4 pt-20 pb-6 shadow-lg rounded-xl
               transition-all duration-300 hover:scale-105'
           >
             <div className='absolute -top-10 left-1/2 transform -translate-x-1/2 w-[75%] z-20'>
               <Image src={level.img} />
             </div>
 
-            <Title order={3} className='mt-22 md:mt-11 mb-2 text-center text-[1.3em]'>
+            <Title
+              order={3}
+              className='mt-22 md:mt-11 mb-2 text-center text-[1.3em]'
+            >
               {level.title}
             </Title>
             <Text className='mb-4 text-center'>{level.sometext}</Text>
