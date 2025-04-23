@@ -9,7 +9,6 @@ import {
   Collapse
 } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
-// import { IconChevronDown, IconChevronUp } from '@tabler/icons-react';
 
 interface Job {
   title: string
@@ -133,7 +132,6 @@ const JobCard: React.FC<Job> = ({ title, deadline, roles, qualifications }) => {
       <Button
         variant='subtle'
         color='blue'
-        // rightIcon={opened ? <IconChevronUp size={16} /> : <IconChevronDown size={16} />}
         onClick={toggle}
         className='mt-4'
       >
