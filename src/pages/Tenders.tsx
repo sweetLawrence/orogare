@@ -16,7 +16,7 @@ const tendersData: Tender[] = [
     id: '1',
     title: 'Supply of Stationery',
     year: '2024/2025',
-    status: 'Open',
+    status: 'Closed',
     description: 'Invitation to bid for supply of general stationery items.',
     documentUrl: '/docs/supply-of-stationery.pdf'
   },
@@ -32,7 +32,7 @@ const tendersData: Tender[] = [
     id: '3',
     title: 'Construction of Workshop',
     year: '2025/2026',
-    status: 'Open',
+    status: 'Closed',
     description:
       'Construction and equipping of new mechanical engineering workshop.',
     documentUrl: '/docs/supply-of-stationery.pdf'
