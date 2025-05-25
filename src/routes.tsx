@@ -8,6 +8,7 @@ import Admission from './pages/Admissions';
 import CareersPage from './pages/Careers';
 import TendersPage from './pages/Tenders';
 import CharterPage from './pages/Charter';
+import Governance from './pages/Governance';
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/governance',
-        element: <UnderConstructionPage />, 
+        // element: <UnderConstructionPage />, 
+        element: <Governance />, 
       },{
         path: '/careers',
         element: <CareersPage />, 

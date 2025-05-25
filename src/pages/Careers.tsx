@@ -35,6 +35,7 @@ const jobs: Job[] = [
         'Excellent communication and instructional skills, with the ability to engage students in hands-on learning.',
       ],
     },
+
 ]
 
 const CareersPage: React.FC = () => {
