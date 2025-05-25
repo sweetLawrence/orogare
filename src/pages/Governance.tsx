@@ -295,7 +295,7 @@ const GovernancePage: React.FC = () => {
               : 'bg-gray-100 hover:bg-gray-200'
           )}
         >
-          <FaUsers /> Board
+          <FaUsers /> Board of Governors
         </button>
         <button
           onClick={() => handleTabChange('admins')}
@@ -306,7 +306,7 @@ const GovernancePage: React.FC = () => {
               : 'bg-gray-100 hover:bg-gray-200'
           )}
         >
-          <FaUserTie /> Admins
+          <FaUserTie /> Administration
         </button>
         <button
           onClick={() => handleTabChange('staff')}
@@ -317,7 +317,7 @@ const GovernancePage: React.FC = () => {
               : 'bg-gray-100 hover:bg-gray-200'
           )}
         >
-          <FaUserFriends /> Staff
+          <FaUserFriends /> Management
         </button>
       </div>
 
