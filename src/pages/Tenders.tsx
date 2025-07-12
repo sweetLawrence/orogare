@@ -17,37 +17,12 @@
       id: '1',
       title: 'Registration of Suppliers for Goods, Services, and Works',
       year: 'Deadline: 27/06/2025, 2:00 PM',
-      status: 'Open',
+      status: 'Closed',
       description: 'Eligible suppliers are invited to apply for supply of goods and services for 2025/2026',
       // documentUrl: '/docs/supply-of-stationery.pdf',
       documentUrl: TenderDoc
     },
-    // {
-    //   id: '2',
-    //   title: 'Catering Services',
-    //   year: '2024/2025',
-    //   status: 'Closed',
-    //   description: 'Tender for provision of catering services for events.',
-    //   documentUrl: '/docs/supply-of-stationery.pdf'
-    // },
-    // {
-    //   id: '3',
-    //   title: 'Construction of Workshop',
-    //   year: '2025/2026',
-    //   status: 'Closed',
-    //   description:
-    //     'Construction and equipping of new mechanical engineering workshop.',
-    //   documentUrl: '/docs/supply-of-stationery.pdf'
-    // },
-    // {
-    //   id: '4',
-    //   title: 'IT Equipment Supply',
-    //   year: '2025/2026',
-    //   status: 'Closed',
-    //   description:
-    //     'Supply and installation of IT infrastructure and lab computers.',
-    //   documentUrl: '/docs/supply-of-stationery.pdf'
-    // }
+    
   ]
 
   const getUniqueYears = (tenders: Tender[]) => {
