@@ -224,7 +224,7 @@ import { useSearchParams } from 'react-router-dom'
 // import Chair from '../assets/Governance/Board/chair.webp'
 import Secretary from '../assets/Governance/Board/secretary.webp'
 import DPrincipal from '../assets/Governance/Admin/dp-principal.webp'
-import Registrar from '../assets/Governance/Admin/registrar.webp'
+import Registrar from '../assets/Governance/Admin/registrar.jpeg'
 import Dean from '../assets/Governance/Admin/dean.webp'
 
 import M from '../assets/Governance/Admin/m-dummy.webp'

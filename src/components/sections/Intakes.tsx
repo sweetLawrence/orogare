@@ -7,20 +7,20 @@ const Intakes = () => {
   const opening = [
     {
       title: 'January Intake',
-      from: '1st Jan 2025',
-      to: '3rd Feb 2025',
-      status: 'Closed'
-    },
-    {
-      title: 'May Intake',
-      from: '1st Apr 2025',
-      to: '31st May 2025',
+      from: '1st Jan 2026',
+      to: '1st Feb 2026',
       status: 'Open'
     },
     {
+      title: 'May Intake',
+      from: '1st Apr 2026',
+      to: '31st May 2026',
+      status: 'Closed'
+    },
+    {
       title: 'September Intake',
-      from: '1st Aug 2025',
-      to: '3rd Oct 2025',
+      from: '1st Aug 2026',
+      to: '3rd Oct 2026',
       status: 'Closed'
     }
   ]

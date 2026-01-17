@@ -12,8 +12,8 @@ const Admission = () => {
     // 'Payment Slip (if applicable)',
   ];
 
-  const intakeStart = 'Tuesday, April 1, 2025';
-  const intakeClose = 'Saturday, May 31, 2025';
+  const intakeStart = 'Thursday, January 1, 2026';
+  const intakeClose = 'Monday, February 2, 2026';
 
   return (
     <section className="w-full min-h-screen bg-white py-16 px-4 mt-10 md:mt-0 md:px-20">

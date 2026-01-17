@@ -6,7 +6,7 @@ import { useState } from 'react'
 const HandsOn = () => {
   const [loaded, setLoaded] = useState(false)
   return (
-    <div className='w-[100%] h-[92vh] relative mb-5 overflow-x-hidden'>
+    <div className='w-[100%] h-[92vh] relative mb-5 overflow-hidden'>
       <Image
         src={HandsonBlur}
         alt='Blurred'
