@@ -1,29 +1,27 @@
-import { useEffect } from 'react'
-import { Outlet, useLocation } from 'react-router-dom'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import { useMediaQuery } from '@mantine/hooks'
-import MobileNav from './MobileNav'
+import { useMediaQuery } from "@mantine/hooks";
+import { useEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom";
+import Footer from "./Footer";
+import MobileNav from "./MobileNav";
+import Navbar from "./Navbar";
 
 const Layout = () => {
-  const { pathname } = useLocation()
-  const isSmallScreen = useMediaQuery('(max-width: 640px)')
+    const { pathname } = useLocation();
+    const isSmallScreen = useMediaQuery("(max-width: 640px)");
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }, [pathname])
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, [pathname]);
 
-  return (
-    <div>
-      {isSmallScreen ? <MobileNav /> : <Navbar />}
+    return (
+        <main>
+            {isSmallScreen ? <MobileNav /> : <Navbar />}
+            {/*<main>*/}
+            <Outlet />
+            {/*</main>*/}
+            <Footer />
+        </main>
+    );
+};
 
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
-
-    </div>
-  )
-}
-
-export default Layout
+export default Layout;

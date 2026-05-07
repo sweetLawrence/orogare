@@ -5,8 +5,8 @@ const navdata = [
     { name: "Governance", path: "/governance" },
     { name: "Careers", path: "/careers" },
     { name: "Tenders", path: "/tenders" },
-    { name: "Charter", path: "/charter" }
-  ];
-  
-  export default navdata;
-  
+    { name: "Charter", path: "/charter" },
+    { name: "Downloads", path: "/downloads" },
+];
+
+export default navdata;
